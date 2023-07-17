@@ -22,10 +22,12 @@ function App() {
   return (
     <div>
       <h1>Random Keyboard Sounds</h1>
-      <h2>{videoName}</h2>
-      <VideoPlayer setVideoName={setVideoName} />
-      <RatingForm videoName={videoName} setRatings={setRatings} />
-      <RatingsList ratings={ratings} setRatings={setRatings} />
+
+      <div className="content">
+        <VideoPlayer setVideoName={setVideoName} videoName={videoName} />
+        <RatingForm videoName={videoName} setRatings={setRatings} />
+        <RatingsList ratings={ratings} setRatings={setRatings} />
+      </div>
     </div>
   );
 }

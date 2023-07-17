@@ -1,28 +1,30 @@
-/* app.css */
-
 body {
-  background-color: #000;
+  background-color: #a2d2ff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='472' height='472' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%2380b0dc' fill-opacity='0.26'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.26'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
   font-family: Arial, sans-serif;
+  font-family: "Source Code Pro", monospace;
   color: #fff;
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 h1 {
-  background-color: #fff;
-  color: #000;
-  padding: 20px;
-  margin: 0;
-  width: 100%;
-  text-align: center;
+  color: #ffafcc;
+  font-size: 130px;
+  position: absolute;
+  top: 0;
+  left: 100px;
+  background-color: rgba(189, 224, 254, 0.3);
+  word-wrap: normal;
+  width: 572px;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 h2 {
   color: #fff;
-  margin-top: 20px;
+  font-size: 50px;
 }
 
 form {
@@ -41,19 +43,26 @@ li {
   margin: 10px 0;
   padding: 20px;
   border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 button {
-  background-color: #fff;
-  color: #000;
+  color: #fff;
+  border-radius: 3px;
+  background-color: #ffafcc;
+  font-weight: 600;
   border: none;
   padding: 10px 20px;
-  border-radius: 5px;
   cursor: pointer;
   margin-top: 20px;
+  transition: 0.5s ease;
 }
 
 button:hover {
-  background-color: #666;
+  background-color: #ffc8dd;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }

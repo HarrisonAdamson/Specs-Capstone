@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
-
+import "./RatingsForm.css";
 function RatingForm({ videoName, setRatings }) {
   const [rating, setRating] = useState("");
 
@@ -23,7 +23,7 @@ function RatingForm({ videoName, setRatings }) {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="form" onSubmit={handleSubmit}>
       <label>
         Rating:
         <input
@@ -35,7 +35,9 @@ function RatingForm({ videoName, setRatings }) {
           required
         />
       </label>
-      <button type="submit">Submit</button>
+      <button className="submitBtn" type="submit">
+        Submit
+      </button>
     </form>
   );
 }

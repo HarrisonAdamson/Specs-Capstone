@@ -1,0 +1,35 @@
+#rating-list {
+  position: absolute;
+  top: 600px;
+  left: 200px;
+  background-color: rgba(189, 224, 254, 0.3);
+  border-radius: 10px;
+  max-height: 400px;
+  width: 400px;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ratings-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 40%;
+}
+.ratings-name {
+  font-size: 20px;
+  margin: 10px;
+}
+.ratings-rate {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.delete-btn {
+  margin: 0;
+}

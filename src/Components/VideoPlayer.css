@@ -1,0 +1,15 @@
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  left: 1050px;
+}
+.player {
+  padding: 30px;
+  background-color: rgba(189, 224, 254, 0.3);
+  border-radius: 10px;
+}

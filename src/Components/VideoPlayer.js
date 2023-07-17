@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import YouTube from "react-youtube";
 import keyboardArray from "../Data.js";
+import "./VideoPlayer.css";
 
-function VideoPlayer({ setVideoName }) {
+function VideoPlayer({ videoName, setVideoName }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   function onPlayerReady(event) {
@@ -19,12 +20,17 @@ function VideoPlayer({ setVideoName }) {
   }, [currentIndex, setVideoName]);
 
   return (
-    <div>
-      <YouTube
-        videoId={keyboardArray[currentIndex].videoId}
-        onReady={onPlayerReady}
-      />
-      <button onClick={changeVideo}>Change Video</button>
+    <div className="video">
+      <h2>{videoName}</h2>
+      <div className="player">
+        <YouTube
+          videoId={keyboardArray[currentIndex].videoId}
+          onReady={onPlayerReady}
+        />
+      </div>
+      <button className="changeBtn" onClick={changeVideo}>
+        Change Video
+      </button>
     </div>
   );
 }
